@@ -1,0 +1,96 @@
+
+====================================================================
+-----------------------PYTHON PROJECT-------------------------------
+====================================================================
+
+
+----List of Files which have been used to create Python Program-----
+====================================================================
+ABC_Bank\data\data1.csv
+ABC_Bank\data\data2.csv
+ABC_Bank\data\data3.csv
+
+-------------Reconcilation Report of Account Data Files-------------
+====================================================================
+Total Files in Data Folder =3
+Total Records in All Files =9
+
+--------------------------------------------------------------------
+      FirstName       LastName      Min/Max Balance Amount  
+--------------------------------------------------------------------
+       mona             William          $200
+       kevin            William          $21200
+
+
+-------------Reconcilation Report of Data1.csv----------------------
+====================================================================
+Processed Data File: ABC_Bank\data\data1.csv
+
+Total Records in The File =3
+
+--------------------------------------------------------------------
+      FirstName       LastName      Min/Max Balance Amount  
+--------------------------------------------------------------------
+       terry              smith          $1000
+        tom               smith          $2000
+       mike              William          $2000
+
+
+--------------Reconcilation Report of Data2.csv---------------------
+====================================================================
+Processed Data File: ABC_Bank\data\data2.csv
+
+Total Records in The File =3
+
+--------------------------------------------------------------------
+      FirstName       LastName      Min/Max Balance Amount  
+--------------------------------------------------------------------
+       mona              William          $200
+       ajay              patel          $10000
+
+
+--------------Reconcilation Report of Data3.csv---------------------
+====================================================================
+Processed Data File: ABC_Bank\data\data3.csv
+
+Total Records in The File =3
+
+--------------------------------------------------------------------
+      FirstName       LastName      Min/Max Balance Amount  
+--------------------------------------------------------------------
+       amin              patel          $1000
+       kevin             William          $21200
+
+
+====================================================================
+
+The Content of all data files (data1.csv, data2.csv, data3.csv)
+merged into new file (account.txt)
+
+====================================================================
+
+Id,name,last,balance, acctype
+1, tom, smith,2000, saving
+2,terry,smith,1000, checking
+3,mike,William,2000,saving
+1, tim, smith, 2000, saving
+2,ajay,patel,10000, checking
+3,mona,William,200,checking
+1, tim, smith, 2000, saving
+2,amin,patel,1000, checking
+3,kevin,William,21200,saving
+
+------Summary of ABC Bank Total Saving And Checking Accounts--------
+====================================================================
+
+Total Checking Accounts:4
+Total Saving Accounts:5
+
+Total Amount of All Checking Accounts:  $12200
+Total Amount of All Saving Accounts:  $29200
+
+Date Report Generated:06/16/2020 @13:19:38
+
+---------------------------Thank You!!!-----------------------------
+====================================================================
+====================================================================
