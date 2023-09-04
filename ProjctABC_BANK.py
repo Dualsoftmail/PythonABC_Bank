@@ -1,10 +1,10 @@
 import os
 
-# Define the data folder path
+
 data_folder = '/Users/admin/Downloads/data/'
 
 
-# Task 1: Count total data files and data records in each file
+# Task 1:
 def count_records_in_file(file_path):
     with open(file_path, 'r') as file:
         return sum(1 for line in file)
@@ -17,14 +17,14 @@ for filename in file_list:
         total_records = count_records_in_file(os.path.join(data_folder, filename))
         print(f"File: {filename}, Total Records: {total_records}")
 
-# Task 2: Find max and min balance in each data file
+# Task 2: 
 def find_max_min_balance(file_path):
     with open(file_path, 'r') as file:
         lines = file.readlines()
         max_balance = -float('inf')
         min_balance = float('inf')
-        problematic_lines = []  # Store problematic lines
-        for line_number, line in enumerate(lines[1:], start=2):  # Skip the header row
+        problematic_lines = []  #
+        for line_number, line in enumerate(lines[1:], start=2): 
             parts = line.strip().split(',')
             if len(parts) == 5:
                 _, _, _, balance, _ = parts
@@ -45,7 +45,7 @@ for filename in file_list:
             for line_number, line in problematic_lines:
                 print(f"Line {line_number}: {line}")
 
-# Task 3: Find overall max and min balance across all data files
+# Task 3: 
 overall_max_balance = -float('inf')
 overall_min_balance = float('inf')
 
@@ -57,7 +57,7 @@ for filename in file_list:
 
 print(f"Overall Max Balance: {overall_max_balance}, Overall Min Balance: {overall_min_balance}")
 
-# Task 4: Count total savings and checking accounts
+# Task 4: 
 total_savings = 0
 total_checking = 0
 
