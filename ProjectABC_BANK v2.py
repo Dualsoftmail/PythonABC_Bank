@@ -69,14 +69,11 @@ for filename in file_list:
             lines = file.readlines()
             for line in lines:
                 info = line.strip().split(",")
-                print(info)
                 nums = int(info[3])
                 if nums > maxb:
                     maxb = nums
                     f_name = info[1]
                     l_name = info[2]
-print(f_name)
-print(l_name)
 #NEW PART ENDS
 
 print(f"Overall Max Balance: {overall_max_balance}, Overall Min Balance: {overall_min_balance}")
